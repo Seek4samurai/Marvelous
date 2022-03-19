@@ -15,9 +15,23 @@
     <link rel="stylesheet" href="./public/styles/cards.css" />
     <link rel="stylesheet" href="./public/styles/slider.css" />
     <link rel="stylesheet" href="./public/styles/footer.css" />
-    <title>IITV Marvels</title>
+    <title>Not Marvel</title>
   </head>
   <body>
+    <div class="loader" id="loader">
+      <a href="#">
+        <img src="./public/assets/loading.gif" alt="Loading..." />
+      </a>
+    </div>
+    <div id="menu" class="menu hidden">
+      <div class="menuBG">
+        <ul>
+          <li><a href="./pages/about.html">About</a></li>
+          <li><a href="./pages/heroes.html">Heroes</a></li>
+          <li><a href="./pages/author.html">Author</a></li>
+        </ul>
+      </div>
+    </div>
     <div class="wrapper">
       <div class="slides-container">
         <div id="imageSet" class="slide-image">
@@ -123,4 +137,5 @@
     </footer>
   </body>
   <script src="./src/app.js"></script>
+  <script src="./src/loader.js"></script>
 </html>

@@ -52,4 +52,5 @@ footer {
   transform: translate(-50%, 0%);
   color: white;
   padding: 1rem;
+  cursor: pointer;
 }
