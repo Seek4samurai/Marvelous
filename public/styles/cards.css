@@ -1,0 +1,68 @@
+.cardSection {
+  height: 100vh;
+  background: linear-gradient(116.84deg, #222222 59.72%, #bf0532 100%);
+}
+
+.cardHolder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  transform: translateY(-20%);
+  z-index: 99;
+}
+
+.card {
+  width: 258px;
+  height: 387px;
+  margin: 0 1rem;
+  border-radius: 1.6rem;
+  overflow: hidden;
+  background: #ff0440;
+  transition: all 0.5s ease;
+  border: 1px solid #ff0440;
+  cursor: pointer;
+}
+
+.card img {
+  width: 105%;
+  mix-blend-mode: darken;
+}
+
+@media only screen and (max-width: 900px) {
+  .card {
+    width: 158px;
+    height: 240px;
+  }
+}
+@media only screen and (max-width: 585px) {
+  .cardSection {
+    height: 70vh;
+  }
+  .card {
+    width: 100px;
+    height: 100px;
+    border-radius: 0.8rem;
+  }
+}
+.textContainer {
+  color: white;
+  font-family: inter;
+  font-size: 1.2rem;
+  margin: 0 15%;
+}
+
+.card:hover {
+  transform: scale(1.1);
+  background-color: rgba(255, 4, 64, 0.2);
+}
+.cardCenter:hover {
+  transform: scale(1.1);
+  background-color: rgba(255, 4, 64, 0.2);
+}
+
+@media only screen and (max-width: 600px) {
+  .textContainer {
+    font-size: 0.8rem;
+  }
+} ;

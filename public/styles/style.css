@@ -1,0 +1,113 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  text-decoration: none;
+}
+
+body {
+  overflow-x: hidden;
+  font-family: "Inter", sans-serif;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+  background-color: #171717;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #ff2c5d;
+}
+
+.logo {
+  position: absolute;
+  transform: scale(0.1);
+  z-index: 99;
+}
+.logo img {
+  position: absolute;
+}
+
+.container {
+  overflow: hidden;
+  height: 100vh;
+}
+.hue {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(
+    342deg,
+    rgba(17, 17, 17, 0.6) 50%,
+    rgba(164, 37, 59, 1) 100%
+  );
+}
+.bgImage {
+  background-repeat: no-repeat;
+  filter: blur(6px) saturate(0);
+  height: 100vh;
+  width: 100vw;
+}
+.heading {
+  position: absolute;
+  top: 25%;
+  left: 4rem;
+}
+.heading h1 {
+  color: white;
+  /* font-family: "Agency fb"; */
+  font-size: 9rem;
+  font-weight: 300;
+  letter-spacing: -10px;
+}
+.heading h1 div {
+  font-size: 10rem;
+  font-weight: bold;
+}
+.cinemas {
+  position: absolute;
+  color: white;
+  font-size: 4rem;
+  font-family: "Agency fb";
+  padding-top: 1rem;
+}
+.checkBtn {
+  padding: 1rem;
+  border-radius: 0.2rem;
+  color: #171717;
+  background-color: #ff2c5d;
+  font-size: 1rem;
+  font-weight: bold;
+  margin-top: 2rem;
+}
+
+@media only screen and (max-width: 664px) {
+  .heading {
+    left: 0;
+  }
+  .heading h1 {
+    font-size: 3rem;
+  }
+  .heading h1 div {
+    font-size: 4rem;
+  }
+  .cinemas {
+    font-size: 2.5rem;
+  }
+}
+
+@media (min-width: 664px) and (max-width: 1280px) {
+  .logo {
+    transform: scale(0.08);
+  }
+  .heading h1 div {
+    font-size: 5rem;
+  }
+  .heading h1 {
+    font-size: 2rem;
+  }
+  .cinemas {
+    position: initial;
+    font-size: 2rem;
+    padding-top: 2rem;
+  }
+}
